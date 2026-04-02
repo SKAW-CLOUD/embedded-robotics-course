@@ -1,0 +1,42 @@
+Comparison of calculator.c (C) vs calculator.cpp (C++)
+
+1. Header Files
+   - C: #include <stdio.h>
+   - C++: #include <iostream> and #include <iomanip>
+   - Explanation: C++ uses stream-based I/O, so iostream and iomanip are needed for input/output and number formatting.
+
+2. Namespace
+   - C: No namespace required
+   - C++: using namespace std;
+   - Explanation: C++ streams like cin/cout belong to std, so using the namespace makes the code cleaner.
+
+3. Input Functions
+   - C: scanf("%lf %c %lf", &num1, &op, &num2)
+   - C++: cin >> num1 >> op >> num2
+   - Explanation: cin reads directly into variables without needing & or format specifiers, making input code simpler.
+
+4. Output Functions
+   - C: printf("Result: %.2f\n", result)
+   - C++: cout << fixed << setprecision(2) << "Result: " << result << endl
+   - Explanation: cout with fixed and setprecision provides readable decimal formatting and is more consistent with stream-based I/O.
+
+5. Loop Control
+   - C: while(1) with manual check for 'q' to quit
+   - C++: while loop using cin state to exit when non-number input is given
+   - Explanation: C++ allows the loop to exit naturally on input failure, reducing manual checks and making the code cleaner.
+
+6. Variable Addressing
+   - C: scanf requires & before variables
+   - C++: cin does not require & for variables
+   - Explanation: This reduces visual clutter and potential mistakes in C++ input statements.
+
+7. Error Handling
+   - Both C and C++ use the same switch-case logic
+   - Explanation: The logic for operations (+, -, *, /) and error messages remains the same, showing compatibility between the two languages.
+
+8. Readability and Style
+   - C++ streams read more naturally and the code looks more modern
+   - Explanation: The use of cin/cout and manipulators like fixed/setprecision makes the C++ version clearer and easier to maintain.
+
+Conclusion:
+Overall, the C++ version is clearer for modern programming due to stream-based I/O, automatic loop exit handling, and cleaner formatting, while the C version requires more manual control and format specifiers.
