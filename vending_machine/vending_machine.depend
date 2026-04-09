@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\hp users\documents\embedded-robotics-course\vending_machine\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1775710391 source:c:\users\hp users\documents\embedded-robotics-course\vending_machine\vending.c
+	<stdio.h>
+	"vending.h"
+
+1775710365 c:\users\hp users\documents\embedded-robotics-course\vending_machine\vending.h
+
