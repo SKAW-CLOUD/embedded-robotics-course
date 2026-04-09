@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip>  // for setprecision
+#include <iomanip>
 using namespace std;
 
 int main() {
@@ -11,10 +11,10 @@ int main() {
     while (true) {
         cout << "\nEnter calculation (number operator number): ";
 
-        // Read numbers and operator
+
         if (!(cin >> num1 >> op >> num2)) {
             cout << "Exiting calculator. Goodbye!" << endl;
-            break;  // exit loop if input fails (like typing 'q')
+            break;
         }
 
         switch (op) {
